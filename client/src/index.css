@@ -3,31 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 20 14.3% 4.1%;
-  --muted: 60 4.8% 95.9%;
-  --muted-foreground: 25 5.3% 44.7%;
+  --background: 220 33% 99%;
+  --foreground: 219 50% 15%;
+  --muted: 220 20% 95%;
+  --muted-foreground: 219 25% 40%;
   --popover: 0 0% 100%;
-  --popover-foreground: 20 14.3% 4.1%;
+  --popover-foreground: 219 50% 15%;
   --card: 0 0% 100%;
-  --card-foreground: 20 14.3% 4.1%;
-  --border: 20 5.9% 90%;
-  --input: 20 5.9% 90%;
-  --primary: 217 90% 54%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 271 85% 39%;
+  --card-foreground: 219 50% 15%;
+  --border: 220 13% 90%;
+  --input: 220 13% 90%;
+  --primary: 220 70% 22%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 215 60% 50%;
   --secondary-foreground: 0 0% 98%;
-  --accent: 330 85% 60%;
+  --accent: 345 83% 41%;
   --accent-foreground: 0 0% 98%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 20 14.3% 4.1%;
+  --ring: 220 70% 22%;
   --radius: 0.5rem;
-  --chart-1: 217 90% 54%;
-  --chart-2: 271 85% 39%;
-  --chart-3: 330 85% 60%;
-  --chart-4: 200 100% 50%;
-  --chart-5: 290 100% 50%;
+  --gold: 36 100% 50%;
+  --gold-foreground: 36 30% 15%;
+  --silver: 210 13% 85%;
+  --silver-foreground: 220 30% 15%;
+  --bronze: 25 81% 39%;
+  --bronze-foreground: 0 0% 100%;
+  --chart-1: 220 70% 22%;
+  --chart-2: 215 60% 50%;
+  --chart-3: 345 83% 41%;
+  --chart-4: 36 100% 50%;
+  --chart-5: 210 13% 85%;
 }
 
 .dark {
@@ -92,8 +98,28 @@
     @apply bg-gradient-to-br from-primary to-secondary;
   }
 
+  .bg-luxury-gradient {
+    @apply bg-gradient-to-r from-primary via-secondary to-accent;
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(45deg, hsl(36, 100%, 50%), hsl(36, 100%, 80%), hsl(36, 100%, 50%));
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-luxury-gradient;
+  }
+
   .card-shadow {
     @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .luxury-card {
+    @apply bg-white border border-gray-100 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-500;
+  }
+
+  .gold-border {
+    @apply border-2 border-[#d4af37];
   }
 
   .animate-fade-in {
@@ -110,6 +136,27 @@
 
   .animate-fade-in-delay-3 {
     @apply animate-in fade-in slide-in-from-bottom-4 duration-500 delay-450;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  .glass-effect {
+    @apply bg-white bg-opacity-20 backdrop-blur-lg;
+  }
+  
+  .glass-card {
+    @apply bg-white bg-opacity-40 backdrop-blur-md rounded-xl border border-white border-opacity-20 shadow-xl;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 
