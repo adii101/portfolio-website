@@ -173,14 +173,11 @@ const ProjectsSection = () => {
                   <Button 
                     variant="outline"
                     className="border-2 border-indigo-500 text-indigo-500 hover:bg-indigo-50 px-8 py-6 rounded-full text-lg"
-                    onClick={() => {
-                      const contactSection = document.getElementById('contact');
-                      if (contactSection) {
-                        contactSection.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
+                    asChild
                   >
-                    Get a Free Quote
+                    <a href="https://wa.me/917000779744?text=Hello%20UI%20Elites,%20I'm%20interested%20in%20getting%20a%20free%20quote%20for%20a%20website%20project." target="_blank" rel="noopener noreferrer">
+                      Get a Free Quote on WhatsApp
+                    </a>
                   </Button>
                 </div>
               </div>

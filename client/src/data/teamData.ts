@@ -37,7 +37,7 @@ export const teamMembers: TeamMember[] = [
     name: "Aditya Salve",
     role: "Full Stack Lead",
     phone: "+91 98765 43210",
-    email: "aditya@uielites.com",
+    email: "adityaasalve@hotmail.com",
     focusArea: "Specializing in creating robust and scalable web applications using modern JavaScript frameworks and cloud-native architectures. Expert in frontend optimization and backend system design.",
     skills: [
       { name: "Web Development", percentage: 95 },
@@ -63,7 +63,7 @@ export const teamMembers: TeamMember[] = [
     name: "Tapish Rajoriya",
     role: "Embedded Systems Expert",
     phone: "+91 96325 87410",
-    email: "tapish@uielites.com",
+    email: "tapishrajoriya8@gmail.com",
     focusArea: "Developing smart IoT solutions and embedded systems that bridge the physical and digital worlds. Expertise in real-time applications, sensor integration, and low-level programming.",
     skills: [
       { name: "Embedded Systems", percentage: 98 },
@@ -87,7 +87,7 @@ export const teamMembers: TeamMember[] = [
     name: "Sujeet Choukikar",
     role: "Data Systems Architect",
     phone: "+91 95142 36870",
-    email: "sujeet@uielites.com",
+    email: "sujeetchoukikar2005@gmail.com",
     focusArea: "Engineering advanced data systems and machine learning solutions that transform raw information into strategic business insights. Expert in data pipeline construction and predictive analytics.",
     skills: [
       { name: "Data Engineering", percentage: 96 },
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     technologies: ["React", "Python", "NLP", "Machine Learning", "Flask API"],
     attribution: "Education Tool",
-    link: "#",
+    link: "https://resume-analyzer.netlify.app",
     columnSpan: 6
   },
   {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1616469829941-c7200edec809?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     technologies: ["Next.js", "TailwindCSS", "Chart.js", "Prisma", "PostgreSQL"],
     attribution: "Web Application",
-    link: "#",
+    link: "https://dashboard-ecommerce-demo.vercel.app",
     columnSpan: 8
   },
   {
@@ -146,7 +146,7 @@ export const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     technologies: ["React", "GSAP", "Framer Motion", "Styled Components", "Firebase"],
     attribution: "Web Design",
-    link: "#",
+    link: "https://creative-agency-showcase.netlify.app",
     columnSpan: 4
   },
   {
@@ -156,7 +156,7 @@ export const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     technologies: ["React", "Node.js", "MongoDB", "Google Maps API", "AWS S3"],
     attribution: "Web Platform",
-    link: "#",
+    link: "https://realestate-listings-demo.vercel.app",
     columnSpan: 4
   },
   {
@@ -166,7 +166,7 @@ export const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     technologies: ["Figma", "Adobe XD", "UI/UX", "Prototyping", "Design System"],
     attribution: "UI/UX Design",
-    link: "#",
+    link: "https://productivity-app-ui.webflow.io",
     columnSpan: 6
   }
 ];
