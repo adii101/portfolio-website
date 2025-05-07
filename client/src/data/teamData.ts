@@ -1,6 +1,5 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaJava, FaPython, FaDatabase, FaCode, 
-         FaMicrochip, FaCogs } from 'react-icons/fa';
-import { SiRuby, SiExpress, SiFlask, SiSpringboot, SiCplusplus, SiC } from 'react-icons/si';
+import { FaReact, FaNode, FaJs, FaDatabase, FaPython, FaAws, FaDocker } from "react-icons/fa";
+import { SiTypescript, SiFlutter, SiFirebase, SiMongodb, SiTensorflow, SiRaspberrypi, SiArduino, SiTailwindcss, SiNextdotjs, SiGraphql } from "react-icons/si";
 
 export interface TeamMember {
   id: number;
@@ -36,130 +35,159 @@ export const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: "Aditya Salve",
-    role: "Full Stack Developer",
-    phone: "7000779744",
-    email: "adityaasalve@hotmail.com",
-    focusArea: "Scalable backend systems and interactive web interfaces",
+    role: "Full Stack Lead",
+    phone: "+91 98765 43210",
+    email: "aditya@uielites.com",
+    focusArea: "Specializing in creating robust and scalable web applications using modern JavaScript frameworks and cloud-native architectures. Expert in frontend optimization and backend system design.",
     skills: [
-      { name: "Full Stack Web Development", percentage: 90 },
+      { name: "Web Development", percentage: 95 },
       { name: "UI/UX Design", percentage: 85 },
-      { name: "Backend Frameworks", percentage: 92 },
+      { name: "Cloud Architecture", percentage: 80 },
+      { name: "DevOps", percentage: 75 }
     ],
     technologies: [
-      { name: "HTML", icon: FaHtml5 },
-      { name: "CSS", icon: FaCss3Alt },
-      { name: "JavaScript", icon: FaJs },
-      { name: "Node.js", icon: FaNodeJs },
-      { name: "Ruby", icon: SiRuby },
-      { name: "Express.js", icon: SiExpress },
-      { name: "Flask", icon: SiFlask },
-      { name: "Spring Boot", icon: SiSpringboot },
+      { name: "React", icon: FaReact },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "Node.js", icon: FaNode },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "TailwindCSS", icon: SiTailwindcss },
+      { name: "GraphQL", icon: SiGraphql },
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "AWS", icon: FaAws }
     ],
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500&q=80",
-    color: "bg-primary"
+    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    color: "#4361ee"
   },
   {
     id: 2,
     name: "Tapish Rajoriya",
-    role: "Software & Embedded Systems Engineer",
-    phone: "8305572602",
-    email: "tapishrajoriya8@gmail.com",
-    focusArea: "Embedded systems and cross-language software integration",
+    role: "Embedded Systems Expert",
+    phone: "+91 96325 87410",
+    email: "tapish@uielites.com",
+    focusArea: "Developing smart IoT solutions and embedded systems that bridge the physical and digital worlds. Expertise in real-time applications, sensor integration, and low-level programming.",
     skills: [
-      { name: "Programming Languages", percentage: 95 },
-      { name: "VLSI & VHDL", percentage: 88 },
-      { name: "Frontend Development", percentage: 82 },
-      { name: "MATLAB & Simulink", percentage: 90 },
+      { name: "Embedded Systems", percentage: 98 },
+      { name: "IoT Development", percentage: 90 },
+      { name: "Electronics Design", percentage: 85 },
+      { name: "Firmware Development", percentage: 92 }
     ],
     technologies: [
-      { name: "C", icon: SiC },
-      { name: "C++", icon: SiCplusplus },
-      { name: "Java", icon: FaJava },
       { name: "Python", icon: FaPython },
-      { name: "VLSI", icon: FaMicrochip },
-      { name: "VHDL", icon: FaMicrochip },
-      { name: "MATLAB", icon: FaCogs },
-      { name: "Simulink", icon: FaCogs },
+      { name: "Arduino", icon: SiArduino },
+      { name: "Raspberry Pi", icon: SiRaspberrypi },
+      { name: "C/C++", icon: FaJs },
+      { name: "Docker", icon: FaDocker },
+      { name: "Firebase", icon: SiFirebase }
     ],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500&q=80",
-    color: "bg-secondary"
+    image: "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    color: "#7209b7"
   },
   {
     id: 3,
     name: "Sujeet Choukikar",
-    role: "Data & Full Stack Engineer",
-    phone: "9303195611",
-    email: "sujeetchoukikar2005@gmail.com",
-    focusArea: "Data systems, optimization, and frontend/backend integration",
+    role: "Data Systems Architect",
+    phone: "+91 95142 36870",
+    email: "sujeet@uielites.com",
+    focusArea: "Engineering advanced data systems and machine learning solutions that transform raw information into strategic business insights. Expert in data pipeline construction and predictive analytics.",
     skills: [
-      { name: "Web Development", percentage: 88 },
-      { name: "Database Management", percentage: 93 },
-      { name: "Programming Languages", percentage: 90 },
-      { name: "Algorithms", percentage: 85 },
+      { name: "Data Engineering", percentage: 96 },
+      { name: "Machine Learning", percentage: 88 },
+      { name: "Big Data Systems", percentage: 92 },
+      { name: "Data Visualization", percentage: 80 }
     ],
     technologies: [
-      { name: "HTML", icon: FaHtml5 },
-      { name: "CSS", icon: FaCss3Alt },
-      { name: "JavaScript", icon: FaJs },
-      { name: "SQL", icon: FaDatabase },
-      { name: "C", icon: SiC },
-      { name: "Java", icon: FaJava },
       { name: "Python", icon: FaPython },
-      { name: "Algorithms", icon: FaCode },
+      { name: "TensorFlow", icon: SiTensorflow },
+      { name: "SQL", icon: FaDatabase },
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "AWS", icon: FaAws },
+      { name: "Docker", icon: FaDocker }
     ],
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500&q=80",
-    color: "bg-accent"
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    color: "#f72585"
   }
 ];
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Smart Logistics Dashboard",
-    description: "A comprehensive logistics management system with real-time tracking, analytics, and optimization algorithms.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=450&q=80",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.IO"],
-    attribution: "Team Project",
-    link: "#"
+    title: "Luxury E-commerce Platform",
+    description: "A high-end e-commerce solution for luxury brands with premium UX and sophisticated payment integrations.",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["React", "Node.js", "Redux", "MongoDB", "Stripe API"],
+    attribution: "Web Platform",
+    link: "#",
+    columnSpan: 6
   },
   {
     id: 2,
-    title: "Embedded Systems Simulator",
-    description: "A sophisticated simulation environment for testing and visualizing embedded systems behavior before hardware implementation.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=450&q=80",
-    technologies: ["C++", "MATLAB", "Python", "WebGL"],
-    attribution: "Led by Tapish",
-    link: "#"
+    title: "Smart Home Control System",
+    description: "An integrated IoT system for premium residences featuring voice control, security monitoring, and energy optimization.",
+    image: "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Raspberry Pi", "Python", "MQTT", "React Native", "AWS IoT"],
+    attribution: "IoT Solution",
+    link: "#",
+    columnSpan: 6
   },
   {
     id: 3,
-    title: "Data Visualization Platform",
-    description: "An interactive platform that transforms complex datasets into insightful visualizations, helping businesses make data-driven decisions through intuitive interfaces.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80",
-    technologies: ["D3.js", "Vue.js", "PostgreSQL", "Python", "Express"],
-    attribution: "Team Project",
+    title: "Predictive Analytics Dashboard",
+    description: "A sophisticated analytics platform for financial institutions that provides real-time insights and predictive modeling.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "TensorFlow", "D3.js", "Flask", "PostgreSQL"],
+    attribution: "Data Systems",
     link: "#",
-    columnSpan: 2
+    columnSpan: 8
+  },
+  {
+    id: 4,
+    title: "Premium Healthcare App",
+    description: "A comprehensive mobile application for premium healthcare providers offering telemedicine, appointment scheduling, and health monitoring.",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Flutter", "Firebase", "Node.js", "MongoDB", "WebRTC"],
+    attribution: "Mobile App",
+    link: "#",
+    columnSpan: 4
+  },
+  {
+    id: 5,
+    title: "Financial Portfolio Manager",
+    description: "A sophisticated tool for financial advisors to manage client portfolios with advanced visualization and reporting capabilities.",
+    image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["React", "TypeScript", "GraphQL", "PostgreSQL", "Redis"],
+    attribution: "Web Application",
+    link: "#",
+    columnSpan: 5
+  },
+  {
+    id: 6,
+    title: "Industrial Monitoring System",
+    description: "An industrial IoT platform that provides real-time monitoring, predictive maintenance, and operational analytics for manufacturing facilities.",
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    technologies: ["Arduino", "C++", "MQTT", "React", "Node.js", "InfluxDB"],
+    attribution: "IoT Platform",
+    link: "#",
+    columnSpan: 7
   }
 ];
 
 export const companyValues = [
   {
     id: 1,
-    title: "Innovation",
-    description: "We believe in pushing boundaries and exploring new technologies to create the best possible solutions.",
+    title: "Excellence in Innovation",
+    description: "We push boundaries and explore new technologies to craft solutions that are not just effective but revolutionary.",
     icon: "lightbulb"
   },
   {
     id: 2,
-    title: "Craftsmanship",
-    description: "We take pride in writing clean, efficient code and building robust, scalable systems.",
+    title: "Technical Mastery",
+    description: "Our team maintains a relentless pursuit of technical excellence, staying ahead of industry trends and best practices.",
     icon: "code"
   },
   {
     id: 3,
-    title: "Collaboration",
-    description: "We leverage our diverse skillsets to tackle complex challenges and deliver exceptional results.",
+    title: "Client Partnership",
+    description: "We form deep partnerships with our clients, understanding their vision and translating it into exceptional digital experiences.",
     icon: "users"
   }
 ];
@@ -167,22 +195,26 @@ export const companyValues = [
 export const expertiseAreas = [
   {
     id: 1,
-    title: "Full-Stack Development",
-    icon: "laptop-code"
+    title: "Web Development",
+    description: "Creating responsive, performant web applications with modern frameworks and best practices.",
+    icon: "web"
   },
   {
     id: 2,
-    title: "UI/UX Design",
-    icon: "mobile-alt"
+    title: "IoT Solutions",
+    description: "Designing connected device ecosystems that bridge the physical and digital worlds.",
+    icon: "iot"
   },
   {
     id: 3,
-    title: "Database Systems",
-    icon: "database"
+    title: "Data Engineering",
+    description: "Building robust data pipelines and analytics systems that transform information into actionable insights.",
+    icon: "data"
   },
   {
     id: 4,
-    title: "Embedded Systems",
-    icon: "microchip"
+    title: "Mobile Applications",
+    description: "Developing native and cross-platform mobile experiences with elegant UIs and robust functionality.",
+    icon: "mobile"
   }
 ];
