@@ -84,11 +84,11 @@ const ProjectsSection = () => {
           </div>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div 
               key={project.id}
-              className={`md:col-span-${project.columnSpan || 6}`}
+              className={index === 2 ? "md:col-span-2 lg:col-span-2" : ""}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}

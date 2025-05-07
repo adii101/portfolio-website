@@ -103,7 +103,7 @@ export const teamMembers: TeamMember[] = [
       { name: "AWS", icon: FaAws },
       { name: "Docker", icon: FaDocker }
     ],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80",
     color: "#f72585"
   }
 ];
@@ -157,7 +157,7 @@ export const projects: Project[] = [
     technologies: ["React", "Node.js", "MongoDB", "Google Maps API", "AWS S3"],
     attribution: "Web Platform",
     link: "#",
-    columnSpan: 5
+    columnSpan: 4
   },
   {
     id: 6,
@@ -167,7 +167,7 @@ export const projects: Project[] = [
     technologies: ["Figma", "Adobe XD", "UI/UX", "Prototyping", "Design System"],
     attribution: "UI/UX Design",
     link: "#",
-    columnSpan: 7
+    columnSpan: 6
   }
 ];
 
