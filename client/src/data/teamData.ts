@@ -36,7 +36,7 @@ export const teamMembers: TeamMember[] = [
     id: 1,
     name: "Aditya Salve",
     role: "Full Stack Lead",
-    phone: "+91 98765 43210",
+    phone: "+91 7000 779744",
     email: "adityaasalve@hotmail.com",
     focusArea: "Specializing in creating robust and scalable web applications using modern JavaScript frameworks and cloud-native architectures. Expert in frontend optimization and backend system design.",
     skills: [
@@ -62,7 +62,7 @@ export const teamMembers: TeamMember[] = [
     id: 2,
     name: "Tapish Rajoriya",
     role: "Embedded Systems Expert",
-    phone: "+91 96325 87410",
+    phone: "+91 7000 779744",
     email: "tapishrajoriya8@gmail.com",
     focusArea: "Developing smart IoT solutions and embedded systems that bridge the physical and digital worlds. Expertise in real-time applications, sensor integration, and low-level programming.",
     skills: [
@@ -86,7 +86,7 @@ export const teamMembers: TeamMember[] = [
     id: 3,
     name: "Sujeet Choukikar",
     role: "Data Systems Architect",
-    phone: "+91 95142 36870",
+    phone: "+91 7000 779744",
     email: "sujeetchoukikar2005@gmail.com",
     focusArea: "Engineering advanced data systems and machine learning solutions that transform raw information into strategic business insights. Expert in data pipeline construction and predictive analytics.",
     skills: [
