@@ -7,6 +7,7 @@ import { teamMembers } from "@/data/teamData";
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Instagram, Monitor, MessageCircle, MousePointer, ArrowRight, Code } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Badge } from "@/components/ui/badge";
+import { submitQuoteRequest } from "@/lib/firebase";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -23,19 +24,34 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      // Submit to Firebase
+      await submitQuoteRequest({
+        name: formData.name,
+        email: formData.email,
+        projectType: formData.subject,
+        message: formData.message,
+      });
+      
       toast({
         title: "Message Received",
         description: "Thank you for contacting UI Elites. We'll be in touch shortly.",
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Error",
+        description: "There was a problem submitting your request. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
